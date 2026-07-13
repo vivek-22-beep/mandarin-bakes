@@ -12,7 +12,7 @@ const navLinks = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  return <nav className="sticky top-0 z-50 bg-[#FAF7F2] shadow-sm">
+  return <nav className="sticky top-0 z-50 bg-[var(--color-brand-cream)] shadow-sm">
   <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
     
     {/* Logo */}
@@ -40,7 +40,7 @@ const Navbar = () => {
           <a
             key={link.name}
             href={link.href}
-            className="font-medium text-[#4A2C2A] transition-colors duration-300 hover:text-[#C97B36]"
+            className="font-medium text-[var(--color-brand-brown)] transition-colors duration-300 hover:text-[var(--color-brand-gold)]"
           >
             {link.name}
           </a>
@@ -48,7 +48,7 @@ const Navbar = () => {
 </div>
 
    {/* Order Button */}
-      <button className="hidden rounded-full bg-[#C97B36] px-6 py-3 font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-[#B86A2B] md:block">
+      <button className="hidden rounded-full bg-[var(--color-brand-gold)] px-6 py-3 font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-[var(--color-brand-gold-dark)] md:block">
         Order Now
       </button>
 

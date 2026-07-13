@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+/* ===========================
+   Mandarin Bakes Design System
+   =========================== */
+
+:root {
+  /* Brand Colors */
+  --color-brand-gold: #C97B36;
+  --color-brand-gold-dark: #B86A2B;
+  --color-brand-brown: #4A2C2A;
+  --color-brand-cream: #FAF7F2;
+  --color-brand-text: #6B7280;
+  --color-brand-white: #FFFFFF;
+  --color-brand-border: #F3E5D8;
+
+
+  /* Border Radius */
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  /* Shadows */
+  --shadow-card: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--color-brand-cream);
+  color: var(--color-brand-text);
+}
