@@ -1,4 +1,5 @@
 import cakeImage from "../../../assets/cakes/bread-crumb.jpg";
+import Button from "../../ui/Button";
 
 const Hero = () => {
   return (
@@ -27,13 +28,14 @@ const Hero = () => {
 
           <div className="flex flex-col gap-4 sm:flex-row">
 
-            <button className="rounded-full bg-[#C97B36] px-8 py-4 font-semibold text-white transition duration-300 hover:scale-105 hover:bg-[#B86A2B]">
+            <Button className="hidden md:block">
               Order on WhatsApp
-            </button>
+              </Button>
+            
 
-            <button className="rounded-full border-2 border-[#C97B36] px-8 py-4 font-semibold text-[#C97B36] transition duration-300 hover:bg-[#C97B36] hover:text-white">
+            <Button className="hidden md:block">
               Explore Menu
-            </button>
+            </Button>
 
           </div>
 

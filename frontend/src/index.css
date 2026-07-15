@@ -5,7 +5,7 @@
    =========================== */
 
 :root {
-  /* Brand Colors */
+  --color-brand-primary: #EC268F;
   --color-brand-gold: #C97B36;
   --color-brand-gold-dark: #B86A2B;
   --color-brand-brown: #4A2C2A;
@@ -14,17 +14,51 @@
   --color-brand-white: #FFFFFF;
   --color-brand-border: #F3E5D8;
 
-
-  /* Border Radius */
   --radius-lg: 16px;
   --radius-xl: 24px;
 
-  /* Shadows */
-  --shadow-card: 0 10px 30px rgba(0,0,0,0.08);
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 body {
   font-family: "Poppins", sans-serif;
   background: var(--color-brand-cream);
   color: var(--color-brand-text);
+}
+
+/* ===========================
+   SWIPER NAVIGATION
+=========================== */
+
+/* Navigation Arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #C97B36 !important;
+  transition: all 0.3s ease;
+}
+
+/* Arrow Size */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 28px !important;
+  font-weight: 700;
+}
+
+/* Hover */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #B86A2B !important;
+  transform: scale(1.15);
+}
+
+/* Pagination */
+.swiper-pagination-bullet {
+  background: #C97B36 !important;
+  opacity: 0.4;
+}
+
+.swiper-pagination-bullet-active {
+  background: #C97B36 !important;
+  opacity: 1;
+  transform: scale(1.25);
 }

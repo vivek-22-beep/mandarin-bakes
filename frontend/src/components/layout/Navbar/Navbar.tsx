@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 
+import Button from "../../ui/Button";
+import Container from "../../ui/Container";
+
 const navLinks = [
   { name: "Home", href: "#" },
   { name: "About", href: "#" },
@@ -13,7 +16,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return <nav className="sticky top-0 z-50 bg-[var(--color-brand-cream)] shadow-sm">
-  <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+  <Container className="flex items-center justify-between py-4">
     
     {/* Logo */}
     <div className="flex items-center gap-3 cursor-pointer">
@@ -48,9 +51,9 @@ const Navbar = () => {
 </div>
 
    {/* Order Button */}
-      <button className="hidden rounded-full bg-[var(--color-brand-gold)] px-6 py-3 font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-[var(--color-brand-gold-dark)] md:block">
-        Order Now
-      </button>
+      <Button className="hidden md:block">
+  Order Now
+</Button>
 
       {/* Mobile Menu Icon */}
       <button
@@ -60,7 +63,7 @@ const Navbar = () => {
         {isOpen ? <FiX /> : <FiMenu />}
       </button>
 
-  </div>
+  </Container>
 </nav>;
 };
 
