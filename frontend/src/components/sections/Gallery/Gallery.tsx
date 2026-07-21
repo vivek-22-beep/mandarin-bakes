@@ -3,7 +3,9 @@ import GallerySlider from "./GallerySlider";
 
 const Gallery = () => {
   return (
-    <section className="relative overflow-hidden bg-[#FAF7F2] py-24">
+    <section 
+    id="gallery"
+    className="relative overflow-hidden bg-[#FAF7F2] py-24">
 
       {/* Decorative Background */}
       <div className="absolute -left-32 top-20 h-72 w-72 rounded-full bg-[#C97B36]/10 blur-3xl"></div>

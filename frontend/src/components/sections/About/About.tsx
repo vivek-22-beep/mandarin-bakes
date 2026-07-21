@@ -10,7 +10,9 @@ const features = [
 
 const About = () => {
   return (
-    <section className="bg-[#FAF7F2] py-24">
+    <section
+  id="about"
+    className="bg-[#FAF7F2] py-24">
       <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
 
         {/* Image */}

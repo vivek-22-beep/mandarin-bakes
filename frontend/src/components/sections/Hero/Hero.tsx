@@ -3,7 +3,9 @@ import Button from "../../ui/Button";
 
 const Hero = () => {
   return (
-    <section className="bg-[#FAF7F2]">
+    <section 
+    id="hero"
+    className="bg-[#FAF7F2]">
       <div className="mx-auto flex min-h-[90vh] max-w-7xl flex-col-reverse items-center justify-between gap-12 px-6 py-16 md:flex-row">
 
         {/* Left Content */}
